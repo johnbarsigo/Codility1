@@ -11,6 +11,18 @@ def solution ( A, D ) :
     months = 12
     # Total -> to hold the total balance  as the program loops
     total = 0
+    counter = 0
+
+    for y in A :
+        if A[y] < 0 :
+            month1 = int(D[y].split('-')[1])
+    #     for z in D :
+    #         if D[y][5:6] == D[z][5:6] :
+    #             counter = counter + 1
+    # print ( f"counter : {counter}")
+
+    if counter >= 3 :
+        months = months - 1
 
     for x in A :
         total = total + x
